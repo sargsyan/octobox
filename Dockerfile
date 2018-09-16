@@ -8,6 +8,7 @@ RUN apk add --update \
   mysql-dev \
   tzdata \
   curl-dev \
+  libidn-dev \
   && rm -rf /var/cache/apk/*
 # throw errors if Gemfile has been modified since Gemfile.lock
 RUN bundle config --global frozen 1
